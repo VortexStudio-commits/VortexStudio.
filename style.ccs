@@ -1,104 +1,107 @@
-/* General */
-body {
-    background-color: #ffffff; /* Fondo blanco */
-    color: #333333; /* Texto oscuro para contraste */
-    font-family: 'Inter', sans-serif;
+/* Color principal */
+:root {
+    --primary-color: #00FF00; /* Verde fosforescente */
+    --text-color: #FFFFFF; /* Blanco */
+    --background-color: #000000; /* Negro para el fondo */
 }
 
-h1, h2, h3 {
-    color: #00FF00; /* Verde fosforescente para los títulos */
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 a {
-    color: #FF00FF; /* Rosa fosforescente para enlaces */
+    color: var(--primary-color);
     text-decoration: none;
-    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #00FF00; /* Cambia a verde fosforescente en hover */
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    padding: 2px;
 }
 
-button {
-    background-color: #00FF00; /* Verde fosforescente para los botones */
-    color: #ffffff; /* Texto blanco */
-    border: none;
-    padding: 10px 20px;
+/* Header y navegación */
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    color: var(--text-color);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu-toggle {
+    font-size: 24px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    display: none;
 }
 
-button:hover {
-    background-color: #FF00FF; /* Cambia a rosa fosforescente en hover */
-}
-
-/* Navigation */
-nav {
-    background-color: #ffffff; /* Fondo blanco */
-    border-bottom: 2px solid #00FF00; /* Línea verde fosforescente */
-}
-
-nav h1 {
-    color: #00FF00; /* Título de navegación en verde fosforescente */
+.nav-links {
+    display: flex;
+    gap: 20px;
 }
 
 .nav-links a {
-    color: #333333; /* Enlaces en gris oscuro */
+    color: var(--text-color);
+    font-size: 18px;
 }
 
 .nav-links a:hover {
-    color: #00FF00; /* Enlaces en verde fosforescente al pasar el mouse */
+    background-color: var(--text-color);
+    color: var(--primary-color);
 }
 
-/* Cards */
-.card {
-    background-color: #f9f9f9; /* Fondo blanco sucio */
-    border: 2px solid #00FF00; /* Borde verde fosforescente */
+/* Main Content */
+main {
+    padding: 50px;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+.service-card {
+    background-color: var(--primary-color);
     padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s ease, border-color 0.3s ease;
+    margin: 20px;
+    border-radius: 5px;
 }
 
-.card:hover {
-    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
-    border-color: #FF00FF; /* Cambio de borde a rosa fosforescente */
+.service-card h3 {
+    color: var(--text-color);
 }
 
-/* Precios */
-.precio-card {
-    background-color: #f9f9f9;
-    border: 2px solid #00FF00;
-    padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s ease, border-color 0.3s ease;
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px;
 }
 
-.precio-card:hover {
-    transform: scale(1.05);
-    border-color: #FF00FF;
-}
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
 
-/* Testimonios */
-.testimonial-card {
-    background-color: #f9f9f9;
-    border: 2px solid #00FF00;
-    padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s ease, border-color 0.3s ease;
-}
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+    }
 
-.testimonial-card:hover {
-    transform: scale(1.05);
-    border-color: #FF00FF;
-}
-
-/* Contacto */
-.contacto-card {
-    background-color: #f9f9f9;
-    border: 2px solid #00FF00;
-    padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s ease, border-color 0.3s ease;
+    .nav-links.active {
+        display: flex;
+    }
 }
 
 .contacto-card:hover {
