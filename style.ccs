@@ -1,0 +1,107 @@
+/* General */
+body {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #333333; /* Texto oscuro para contraste */
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3 {
+    color: #00FF00; /* Verde fosforescente para los títulos */
+}
+
+a {
+    color: #FF00FF; /* Rosa fosforescente para enlaces */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #00FF00; /* Cambia a verde fosforescente en hover */
+}
+
+button {
+    background-color: #00FF00; /* Verde fosforescente para los botones */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FF00FF; /* Cambia a rosa fosforescente en hover */
+}
+
+/* Navigation */
+nav {
+    background-color: #ffffff; /* Fondo blanco */
+    border-bottom: 2px solid #00FF00; /* Línea verde fosforescente */
+}
+
+nav h1 {
+    color: #00FF00; /* Título de navegación en verde fosforescente */
+}
+
+.nav-links a {
+    color: #333333; /* Enlaces en gris oscuro */
+}
+
+.nav-links a:hover {
+    color: #00FF00; /* Enlaces en verde fosforescente al pasar el mouse */
+}
+
+/* Cards */
+.card {
+    background-color: #f9f9f9; /* Fondo blanco sucio */
+    border: 2px solid #00FF00; /* Borde verde fosforescente */
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+    border-color: #FF00FF; /* Cambio de borde a rosa fosforescente */
+}
+
+/* Precios */
+.precio-card {
+    background-color: #f9f9f9;
+    border: 2px solid #00FF00;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.precio-card:hover {
+    transform: scale(1.05);
+    border-color: #FF00FF;
+}
+
+/* Testimonios */
+.testimonial-card {
+    background-color: #f9f9f9;
+    border: 2px solid #00FF00;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+    border-color: #FF00FF;
+}
+
+/* Contacto */
+.contacto-card {
+    background-color: #f9f9f9;
+    border: 2px solid #00FF00;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.contacto-card:hover {
+    transform: scale(1.05);
+    border-color: #FF00FF;
+}
