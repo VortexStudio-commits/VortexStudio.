@@ -1,73 +1,163 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio Minecraft</title>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Press Start 2P', cursive;
-      background: url('https://imgur.com/gallery/would-you-live-city-sk83cNS'); /* textura de pasto estilo Minecraft */
-      color: #fff;
-      text-shadow: 1px 1px 2px #000;
-      padding: 20px;
-    }
-    .container {
-      background-color: rgba(0, 0, 0, 0.7);
-      border: 4px solid #4CAF50;
-      padding: 20px;
-      border-radius: 12px;
-      max-width: 800px;
-      margin: auto;
-    }
-    h1, h2 {
-      color: #4CAF50;
-    }
-    ul {
-      list-style: square;
-      padding-left: 20px;
-    }
-    a {
-      color: #00e0ff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="estilos_fosforescentes.css">
+    <title>Epyc Developer | Portfolio</title>
+    <link rel="icon" href="./assets/images/epyc.webp" type="image/png" />
+    <meta name="description"
+        content="Portfolio de EpycDev, desarrollador web, experto en servidores Minecraft y programación Java. Servicios profesionales y personalizados." />
+    <meta name="author" content="EpycDev">
+    <meta name="theme-color" content="#2196f3" />
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Epyc Developer | Portfolio" />
+    <meta property="og:description"
+        content="Desarrollador web, experto en Java y configuración de servidores Minecraft. Servicios profesionales y personalizados." />
+    <meta property="og:image"
+        content="https://epyc-dev.github.io/assets/images/epyc.webp" />
+    <meta property="og:url" content="https://epyc-dev.github.io" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_AR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Epyc Developer | Portfolio" />
+    <meta name="twitter:description" content="Desarrollador web, Java y experto en servidores Minecraft." />
+    <meta name="twitter:image"
+        content="https://epyc-dev.github.io/assets/images/epyc.webp" />
+    <link href="https://fonts.googleapis.com/css2?family=Chopsic&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.cdnfonts.com/css/chopsic" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta name="google-site-verification" content="8Hg0JWnkTepFl3rz51tdt0NVHniTZdBXdqeodRsIPl8" />
 </head>
+
 <body>
-  <div class="container">
-    <h1>🌍 Vortex Studio — Portafolio Minecraft</h1>
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-4eea59fa-5817-4bd3-aafb-a4d6f82fbc59" data-elfsight-app-lazy></div>
+    <nav>
+        <h1>EPYC</h1>
+        <div class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+        <div class="nav-links" id="nav-links"><a href="#sobre-mi">Sobre mí</a><a href="#servicios">Servicios</a><a
+                href="#proyectos">Proyectos</a><a href="#precios">Precios</a><a href="#testimonios">Testimonios</a><a
+                href="#contacto">Contacto</a></div>
+    </nav>
+    <header>
+        <img src="/assets/images/epyc.webp" alt="Avatar de perfil de Epyc"
+            style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover;" />
+        <h1>EPYC</h1>
+        <p>Desarrollador Web | Java Developer | Configurador Minecraft</p>
+        <a href="https://discord.com/users/852697785856819201"><img src="https://lanyard.cnrad.dev/api/852697785856819201?theme=dark" /></a>
+    </header>
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <div class="card" data-aos="fade-up">
+                <p>
+                    ¡Hola! Soy <strong>Epyc</strong>, desarrollador web y especialista en servidores de Minecraft con 6
+                    años de experiencia. Tengo 18 años y soy de Argentina. Domino <strong>HTML</strong>,
+                    <strong>CSS</strong>, <strong>Java</strong> y un poco de <strong>JavaScript</strong>.
+                </p>
+                <p>
+                    Me dedico a crear y optimizar servidores Minecraft, asegurando buen rendimiento, seguridad y diseño.
+                    Siempre busco mejorar y aprender nuevas tecnologías para ofrecer un servicio profesional, eficiente
+                    y a medida.
+                </p>
+            </div>
+        </section>
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <div class="grid">
+                <div class="card" data-aos="zoom-in">
+                    <i class="fas fa-globe fa-2x" style="color: var(--primary-color);"></i>
+                    <h3>Desarrollo Web</h3>
+                    <p>Creo sitios web modernos, responsivos y optimizados para SEO, usando HTML y CSS personalizados.
+                        Ideal para portfolios, tiendas, biografías y más.</p>
+                </div>
 
-    <h2>💟 Sobre mí</h2>
-    <p>Apasionado por Minecraft, con experiencia en bots de Discord, gestión de servidores y diseño de experiencias multijugador personalizadas.</p>
+                <div class="card" data-aos="zoom-in">
+                    <i class="fas fa-code fa-2x" style="color: var(--primary-color);"></i>
+                    <h3>Desarrollo Java</h3>
+                    <p>Programo plugins personalizados para Minecraft, adaptados 100% a lo que tu servidor necesita,
+                        usando buenas prácticas y código limpio.</p>
+                </div>
 
-    <h2>🔧 Habilidades</h2>
-    <ul>
-      <li>Bots de Discord (Python/Discord.js)</li>
-      <li>Configuración de Servidores (1.8 - 1.21+)</li>
-      <li>Sistemas de economía, clanes, misiones, tiendas</li>
-      <li>Integración con PlaceholderAPI, Vault, LuckPerms</li>
-      <li>Diseño de mapas y experiencias personalizadas</li>
-    </ul>
+                <div class="card" data-aos="zoom-in">
+                    <i class="fas fa-server fa-2x" style="color: var(--primary-color);"></i>
+                    <h3>Gestión de servidores</h3>
+                    <p>Instalo, configuro y mantengo servidores o VPS, incluyendo paneles como Pterodactyl, con enfoque
+                        en rendimiento y seguridad.</p>
+                </div>
 
-    <h2>📦 Proyectos Destacados</h2>
-    <ul>
-      <li><strong>Galaxy Box</strong>: Sistema de clanes, minas, PvP y recompensas.</li>
-      <li><strong>Galaxy Bot</strong>: Bot de Discord con economía, clanes, eventos y sistema PvP.</li>
-      <li><strong>Servidor Survival 1.21.4</strong>: Modo survival avanzado con economía, tierras y eventos automáticos.</li>
-    </ul>
+                <div class="card" data-aos="zoom-in">
+                    <i class="fas fa-hammer fa-2x" style="color: var(--primary-color);"></i>
+                    <h3>Creación de servidores</h3>
+                    <p>Desarrollo servidores Minecraft completos: desde proxy, auth y lobby hasta cualquier modalidad
+                        personalizada, listos para lanzar.</p>
+                </div>
 
-    <h2>🔗 Enlaces</h2>
-    <ul>
-      <li>GitHub: <a href="https://github.com/tuusuario" target="_blank">github.com/tuusuario</a></li>
-      <li>Discord: <a href="https://discord.gg/tuenlace" target="_blank">discord.gg/tuenlace</a></li>
-      <li>Sitio Web: <a href="https://tusitio.com" target="_blank">tusitio.com</a></li>
-    </ul>
-  </div>
+                <div class="card" data-aos="zoom-in">
+                    <i class="fas fa-sliders-h fa-2x" style="color: var(--primary-color);"></i>
+                    <h3>Configuración y traducción de plugins</h3>
+                    <p>Configuro y traduzco tus plugins. También diseño menús, crates, NPCs, eventos y más, con estética
+                        y funcionalidad.</p>
+                </div>
+
+                <div class="card" data-aos="zoom-in">
+                    <i class="fas fa-tachometer-alt fa-2x" style="color: var(--primary-color);"></i>
+                    <h3>Optimización de servidores</h3>
+                    <p>Mejoro el rendimiento general de tu servidor ajustando configuraciones y plugins para que
+                        funcione fluido y sin lag.</p>
+                </div>
+
+                <div class="card" data-aos="zoom-in">
+                    <i class="fas fa-shield-alt fa-2x" style="color: var(--primary-color);"></i>
+                    <h3>Seguridad de tu network</h3>
+                    <p>Detecto y soluciono vulnerabilidades, bugs y errores críticos en servidores, VPS o networks
+                        completas para evitar futuros problemas.</p>
+                </div>
+
+                <div class="card" data-aos="zoom-in">
+                    <i class="fab fa-discord fa-2x" style="color: var(--primary-color);"></i>
+                    <h3>Creación de servidores de Discord</h3>
+                    <p>Diseño servidores de Discord para comunidades, con roles, canales, bots y una estructura
+                        organizada y atractiva.</p>
+                </div>
+            </div>
+        </section>
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="grid">
+                <div class="card" data-aos="zoom-in-up" data-aos-delay="200">
+                    <img src="./assets/images/epycoffhand.webp"
+                        alt="Epyc Offhand" />
+                    <h3>Epyc Offhand</h3>
+                    <p>Plugin para Minecraft que corrige el bug del *offhand*, comúnmente explotado en servidores de
+                        BoxPvP.</p>
+                    <p>Es liviano, eficiente y cuenta con 4 métodos de protección configurables, explicados en su página
+                        oficial.</p>
+                    <a href="https://www.spigotmc.org/resources/epyc-offhand-1-16-1-20-no-dependencies.116986/"
+                        target="_blank" style="color: var(--primary-color); text-decoration: underline;">Ver
+                        detalles</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById("nav-links");
+            navLinks.classList.toggle("active");
+        }
+
+        document.querySelectorAll("#nav-links a").forEach(link => {
+            link.addEventListener("click", () => {
+                document.getElementById("nav-links").classList.remove("active");
+            });
+        });
+        AOS.init();
+    </script>
 </body>
-</html>
 
+</html>
